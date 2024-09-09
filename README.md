@@ -41,5 +41,5 @@ This project focuses on the development and analysis of control and navigation a
 
    # Control with Joystick
    rosrun your_package joystick_control
-  '''bash
+  '''
   
