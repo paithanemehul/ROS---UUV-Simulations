@@ -41,5 +41,9 @@ This project focuses on the development and analysis of control and navigation a
 
    # Control with Joystick
    rosrun your_package joystick_control
-  '''
+
+## Acknowledgments
+- Dr. P.B. Sujit for supervision and guidance
+- IISER Bhopal, Department of Electrical Engineering and Computer Science for resources and support
+- All friends and colleagues who supported during the development
   
