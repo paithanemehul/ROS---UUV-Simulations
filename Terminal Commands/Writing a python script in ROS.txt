@@ -1,0 +1,6 @@
+WRITING A PYTHON SCRIPT:
+    - Go to the scripts folder inside your ROS package
+    - To edit the python file: {gedit 'name of python file'}
+    - Basic requirement for running a python file in python, the first line should be: {#!/usr/bin/env python}
+    - Second line: {import rospy}
+    - Then start writing the necessary code.

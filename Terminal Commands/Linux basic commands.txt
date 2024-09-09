@@ -1,0 +1,32 @@
+SIMPLE LINUX COMMANDS:
+
+1). ls: List files and directories in the current working directory.
+2). cd: Change the current working directory to a specified directory.
+3). mkdir: Create a new directory.
+4). rm: Remove files or directories.
+5). cp: Copy files or directories.
+6). mv: Move files or directories.
+7). cat: Display the contents of a file.
+8). grep: Search for a pattern in a file.
+9). chmod: Change permissions on a file or directory.
+10). sudo: Run a command as a superuser.
+11). tar: Compress or decompress files and directories.
+12). ssh: Connect to a remote server via SSH.
+13). ping: Test connectivity to a server.
+14). top: Display system processes and resource usage.
+15). df: Display disk space usage.
+16). pwd: Print the current working directory.
+17). history: Display a list of previously executed commands.
+18). nano: A simple text editor to create and edit files.
+19). vi or vim: A powerful text editor to create and edit files.
+20). ssh-keygen: Generate SSH keys for secure authentication.
+21). scp: Securely copy files between local and remote servers.
+22). wget: Download files from the internet.
+23). curl: Transfer data from or to a server using various protocols.
+24). find: Search for files or directories matching a specified pattern.
+25). tar: Create or extract compressed archive files.
+26). zip: Create or extract compressed ZIP archive files.
+27). unzip: Extract files from a ZIP archive.
+28). chmod: Change the permissions of files or directories.
+29). chown: Change the ownership of files or directories.
+30). apt-get or yum: Package managers used to install, update, or remove software packages.

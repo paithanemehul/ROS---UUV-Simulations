@@ -1,0 +1,6 @@
+CREATING A URDF FILE:
+    - Open catkin workspace {cd catkin_ws/}
+    - Open the source directory {cd src/}
+    - Open the catkin package in which you want to create the URDF file {cd 'your_catkin_package'/}
+    - To create a new URDF file we use touch command {touch 'name_of_urdf_file'.xacro}
+    - To edit this URDF file: {nano 'name_of_urdf_file'.xacro}

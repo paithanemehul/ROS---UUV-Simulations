@@ -1,0 +1,18 @@
+STEPS FOR AN UUV TO AVOID OBSTACLES:
+
+# We will use REXROV as our UUV for the simulation.
+
+To build a functioning underwater vehicle, you will need hardware components such as sensors, motors,
+and a controller that interfaces with your computer. Once you have these components in place, you can
+use a programming language like Python to control the vehicle.
+
+Here are the steps:
+
+1). Initialize the hardware components and sensors on Rexrov.
+2). Define the start and end points for the vehicle's journey.
+3). Determine the optimal path from the start to the end point using an appropriate algorithm such as A* or Dijkstra's algorithm.
+4). Set the vehicle in motion towards the end point, using the motor controller to adjust speed and direction.
+5). Continuously monitor the sensors for obstacles such as rocks, reefs, or other marine life.
+6). If an obstacle is detected, calculate a new path around it and adjust the vehicle's course accordingly.
+7). Continue navigating until the end point is reached, or until the vehicle runs out of power or encounters a critical error.
+

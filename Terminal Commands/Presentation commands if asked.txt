@@ -1,0 +1,13 @@
+opening underwater (ocean world) - roslaunch uuv_gazebo_worlds ocean_waves.launch
+
+opening shipwreck world - roslaunch uuv_gazebo_worlds herkules_ship_wreck.launch
+
+opening just rexrov2 - roslaunch uuv_descriptions upload_rexrov.launch mode:=default x:=0 y:=0 z:=-20 namespace:=rexrov
+
+To open controller - jstest-gtk
+
+helical waypoint - roslaunch rexrov2_gazebo start_demo_pid_controller.launch -- & --  roslaunch uuv_control_utils start_helical_trajectory.launch uuv_name:=rexrov2 n_turns:=2
+
+Linear inter - roslaunch rexrov2_gazebo start_demo_pid_controller.launch -- & -- roslaunch uuv_control_utils send_waypoints_file.launch uuv_name:=rexrov2 interpolator:=linear
+
+Cubic - roslaunch rexrov2_gazebo start_demo_pid_controller.launch -- & -- roslaunch uuv_control_utils send_waypoints_file.launch uuv_name:=rexrov2 interpolator:=cubic

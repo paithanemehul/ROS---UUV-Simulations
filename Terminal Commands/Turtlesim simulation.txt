@@ -1,0 +1,15 @@
+RUNNING A SIMPLE TURTLESIM DEMO:
+    - Start roscore
+    - Run the turtlesim command {rosrun turtlesim turtlesim_node}
+    - Use {rostopic list} to see what nodes are currently running
+    - For turtlesim (/turtle1/cmd_vel) refers to the command velocity 
+    - {rostopic info /turtle1/cmd_vel} will give information about the following node
+    - {rosmsg info geometry_msgs/Twist} will give the types of motion the turtle can perform (in 2-D)
+    - {rostopic pub -r 10 /turtle1/cmd_vel geometry_msgs/Twist}; (press Tab twice)
+    - To control the turtle using a keyboard: {rosrun teleop_twist_keyboard teleop_twist_keyboard.py cmd_vel:=/turtle1/cmd_vel}
+
+
+GETTING THE POSE OF THE TURTLE: (Pose refers to the different values of the turtle like x,y coordinate, theta and velocities)
+    - After running the above simulation, open a new terminal and type: {rostopic info /turtle1/pose}
+    - Then run {rosmsg info turtlesim/Pose}, you can see the 5 different values
+    - To get the values, run {rostopic echo /turtle1/pose}, echo command is used when you want ROS to keep publishing the message.

@@ -1,0 +1,16 @@
+CREATING A ROS PACKAGE & PYTHON SCRIPT:
+    - Go to catkin_ws/src {cd catkin_ws/src/}
+    - To create a new package: {catkin_create_pkg 'name of package' 'dependencies - like rospy roscpp turtlesim joy std_msgs'}
+    - Go in the package {cd 'name of package'}
+    - Create a scripts folder inside this package {mkdir scripts} - this folder will hold all the codes
+    - To create a python file: {touch 'name of python file'.py}
+    - To make this python file executable: {sudo chmod +x 'name of python file'.py}
+    - ROS needs to know where the nodes/code is, therefore we go back to the package folder (2 times {cd ..})
+    - Inside the package folder there is a CMakeLists.txt file, edit it: {gedit CMakeLists.txt}
+    - Scroll down to the very bottom and write the following lines:
+                                                                  {catkin_install_python(
+                                                                      PROGRAMS
+                                                                      scripts/'name of python file'.py
+                                                                      DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})}
+    - Go back to the main catkin_ws folder and run {catkin_make} (catkin_make runs only when the folder is catkin_ws and not any other)
+    - After running catkin_make command, we need to source the bashrc: {source ~/.bashrc}.
